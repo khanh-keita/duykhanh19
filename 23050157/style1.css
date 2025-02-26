@@ -1,0 +1,195 @@
+body {
+  font-size: 18px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+  border: 2px solid #333;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile h1 {
+  text-align: center;
+  color: rgb(245, 91, 91);
+}
+
+.info h1 {
+  margin: 0;
+  color: #333;
+}
+
+.info p {
+  margin: 5px 0;
+  color: #000000;
+}
+
+.info a {
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: bold;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 960px;
+  border: 2px solid rgb(160, 153, 153);
+  margin: 20px auto;
+  background-color: #f0eeee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+  width: 30%;
+  padding: 20px;
+  background-color: #cfe3e6;
+}
+
+.left-column img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.left-column h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.left-column h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.left-column h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.left-column p {
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 5px;
+}
+
+.skills p {
+  margin-bottom: 5px;
+}
+
+.right-column {
+  width: 70%;
+  padding: 20px;
+}
+
+.right-column h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.right-column .item {
+  margin-bottom: 20px;
+}
+
+.right-column h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.right-column p {
+  margin-bottom: 5px;
+}
+
+.web-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #4caf50;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.icon {
+  text-align: center;
+  
+}
+
+.web-button:hover {
+  background-color: #45a049;
+  box-shadow: 0 0 20px 5px rgba(72, 255, 103, 0.7);
+  transform: scale(1.1);
+}
+
+/* Cấu trúc container chứa các biểu tượng sở thích */
+.hobbies-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Kiểu dáng chung cho mỗi biểu tượng sở thích */
+.hobby {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-size: 50px;
+  transition: all 0.3s ease;
+}
+
+/* Tên sở thích sẽ bị ẩn đi ban đầu */
+.hobby-name {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  font-size: 20px;
+  color: #333;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào icon */
+.hobby:hover {
+  transform: scale(1.2); /* Phóng to icon */
+}
+
+/* Khi hover vào các icon, tên sở thích sẽ xuất hiện */
+.hobby:hover .hobby-name {
+  opacity: 1;
+  bottom: -50px;
+}
